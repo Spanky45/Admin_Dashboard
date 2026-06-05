@@ -1,3 +1,32 @@
-p {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.side-bar {
+    background-color: #1992d4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+}
+
+.header {
+    background-color: #ffffff;
+    grid-column: 2;
+}
+
+.content-area {
+    background-color: #e1e8f0;
+}
+
+.logo > p {
+    color: white;
 }
