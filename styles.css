@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Asap", sans-serif;
 }
 
 .container {
@@ -63,6 +64,7 @@ p.logo {
     font-size: 1.3rem;
 }
 
+/* Side-bar items */
 .second-row {
     grid-row-start: 3;
     grid-row-end: 4;
