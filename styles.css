@@ -23,6 +23,8 @@
 .header {
     background-color: #ffffff;
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .content-area {
@@ -108,4 +110,37 @@ p.logo {
 .tenth-row {
     grid-row-start: 12;
     grid-row-end: 13;
+}
+
+/* Header stuff */
+.search {
+    padding-right: 40px;
+    padding-left: 40px;
+    /* padding-top: 25px; */
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: auto minmax(500px, 1fr) auto;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: rgb(212, 212, 212);
+    width: 500px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.pfp {
+    border-radius: 50%;
+}
+
+.search-right-side > p {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.search-right-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
