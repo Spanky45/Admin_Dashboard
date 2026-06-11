@@ -9,7 +9,7 @@
 .container {
     min-height: 100svh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: minmax(220px, 1fr) minmax(0, 5fr);
     grid-template-rows: 1fr 4fr;
 }
 
@@ -195,4 +195,30 @@ p.logo {
     border: none;
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+/* Content area */
+.content-area {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+}
+
+.cards {
+    min-width: 0;
+    grid-row: 1 / 3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+}
+
+.card {
+    display: grid;
+    /* height: minmax(250px, 1fr);
+    width: minmax(350px, 1fr); */
+    /* height: 250px;
+    width: 350px; */
+    background-color: #ffffff;
 }
